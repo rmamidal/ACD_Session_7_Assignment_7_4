@@ -1,6 +1,13 @@
-var radius = 20; // Variable to accept radius of circle.
-var areaOfCircle = null; // Variable to Store area of circle.
+// Outer function with function parameter.
+function outerFunc(innerFunc){
+  innerFunc(); // Calling parameter function.
+}
 
-areaOfCircle = 3.14 * radius * radius; // Area of circle calculations
+// Declar and define inner function.
+var innerFunc = function() {
+  console.log("Hello world from inner function"); // Printing text to console.
+}
 
-console.log(areaOfCircle); // Prints Area of Circle.
+outerFunc(innerFunc); // Calling outer function with inner function as parameter.
+ 
+ 
